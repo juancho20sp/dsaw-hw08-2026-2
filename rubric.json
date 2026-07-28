@@ -1,0 +1,33 @@
+{
+  "name": "HW08 — React Introduction",
+  "homeworkNumber": 8,
+  "structure": {
+    "maxPoints": 20,
+    "requiredFiles": [
+      { "path": "package.json", "description": "Node project with React dependency", "points": 6 },
+      { "path": "src/App.jsx", "description": "Root React component", "points": 8 }
+    ],
+    "requiredFolders": [
+      { "path": "src", "description": "Source files directory", "points": 6 }
+    ]
+  },
+  "quality": {
+    "maxPoints": 20,
+    "checks": ["eslint"]
+  },
+  "deployment": {
+    "maxPoints": 20,
+    "type": "github-pages"
+  },
+  "acceptance": {
+    "maxPoints": 40,
+    "sourcePaths": ["src/App.jsx"],
+    "criteria": [
+      "The app is built with React (using Vite or Create React App) and has at least 5 distinct, named components — not everything in App.jsx",
+      "The app is the HW07 public API mini-app rebuilt in React — it fetches the same data and shows loading, success, and error states",
+      "A 'favorites' feature is implemented using React component state (useState) — no external state management library",
+      "Lists of items are rendered using .map() with a unique key prop on each element",
+      "The app is deployed on GitHub Pages using the gh-pages npm package or equivalent"
+    ]
+  }
+}
